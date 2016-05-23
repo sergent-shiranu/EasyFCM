@@ -20,4 +20,5 @@ android {
 
 dependencies {
     compile "com.google.firebase:firebase-messaging:${project.FIREBASE_VERSION}"
+    compile "com.android.support:appcompat-v7:${project.APPCOMPAT_VERSION}"
 }
