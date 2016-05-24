@@ -1,9 +1,11 @@
 package com.trung.fcm.library;
 
+import android.content.Intent;
+
 import com.google.firebase.iid.FirebaseInstanceIdService;
 
 /**
- * Created by mrgiua on 24/05/2016.
+ * This service do the unique task ; save FCM Id token locally & remotely
  */
 public class FCMIdListenerService extends FirebaseInstanceIdService {
     private static final String TAG = FCMIdListenerService.class.getSimpleName();
@@ -15,6 +17,6 @@ public class FCMIdListenerService extends FirebaseInstanceIdService {
      */
     @Override
     public void onTokenRefresh() {
-        super.onTokenRefresh();
+        startService(new Intent(this, SaveFCMIdService.class));
     }
 }

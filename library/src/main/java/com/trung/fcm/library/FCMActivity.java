@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- * Created by mrgiua on 24/05/2016.
+ * Simplify Activity for receiving notification
  */
 public abstract class FCMActivity extends Activity implements FCMListener {
 

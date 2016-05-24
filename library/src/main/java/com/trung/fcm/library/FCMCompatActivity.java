@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by mrgiua on 24/05/2016.
+ * Simplify AppCompatActivity for receiving notification
  */
 public abstract class FCMCompatActivity extends AppCompatActivity implements FCMListener {
 
