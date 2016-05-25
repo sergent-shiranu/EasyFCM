@@ -11,7 +11,7 @@ public interface FCMListener {
      *
      * @param deviceToken
      */
-    void onDeviceRegisted(String deviceToken);
+    void onDeviceRegistered(String deviceToken);
 
     /**
      * Called when downstream message receive by device.

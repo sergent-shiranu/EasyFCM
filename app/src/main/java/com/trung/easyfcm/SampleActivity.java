@@ -1,6 +1,5 @@
 package com.trung.easyfcm;
 
-import android.app.Activity;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -12,27 +11,14 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.google.firebase.messaging.RemoteMessage;
-import com.trung.fcm.library.FCMListener;
-import com.trung.fcm.library.FCMManager;
+import com.trung.fcm.library.FCMActivity;
 
-public class MainActivity extends Activity implements FCMListener{
+public class SampleActivity extends FCMActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        FCMManager.getInstance(this).registerListener(this);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        FCMManager.getInstance(this).unRegisterListener();
     }
 
     @Override
@@ -59,7 +45,7 @@ public class MainActivity extends Activity implements FCMListener{
      * @param messageBody FCM message body received.
      */
     private void sendNotification(String messageBody) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, SampleActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);

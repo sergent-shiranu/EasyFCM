@@ -102,7 +102,7 @@ public class FCMManager {
         @Override
         public void onReceive(Context context, Intent intent) {
             if (PrefsHelper.hasFCMToken(context) && mFCMListener != null) {
-                mFCMListener.onDeviceRegisted(PrefsHelper.getFCMToken(context));
+                mFCMListener.onDeviceRegistered(PrefsHelper.getFCMToken(context));
             }
         }
     };

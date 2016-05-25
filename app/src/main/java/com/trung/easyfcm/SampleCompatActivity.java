@@ -1,6 +1,5 @@
 package com.trung.easyfcm;
 
-import android.app.Activity;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -12,27 +11,16 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.google.firebase.messaging.RemoteMessage;
-import com.trung.fcm.library.FCMListener;
-import com.trung.fcm.library.FCMManager;
+import com.trung.fcm.library.FCMCompatActivity;
 
-public class MainActivity extends Activity implements FCMListener{
-
+/**
+ * Created by trung on 25/05/2016.
+ */
+public class SampleCompatActivity extends FCMCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        FCMManager.getInstance(this).registerListener(this);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        FCMManager.getInstance(this).unRegisterListener();
     }
 
     @Override
