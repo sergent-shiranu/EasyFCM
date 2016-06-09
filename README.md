@@ -82,17 +82,17 @@ public class MainActivity extends Activity implements FCMListener{
 * [SampleActivity](https://github.com/trung-nguyen/EasyFCM/blob/master/app/src/main/java/com/trung/easyfcm/SampleActivity.java)
 
 By extending your `Activity` to [FCMActivity](https://github.com/trung-nguyen/EasyFCM/blob/master/library/src/main/java/com/trung/fcm/library/FCMActivity.java)
-`
+
 * [SampleCompatActivity]
 
 By extending your your `Activity` to [FCMCompatActivity](https://github.com/trung-nguyen/EasyFCM/blob/master/library/src/main/java/com/trung/fcm/library/FCMCompatActivity.java)
 
 ## Topic
 
-Subscription and Unsubsription to/from Topics. (after onDeviceRegistered())
+Subscription and Un-subscription to/from Topics. (after onDeviceRegistered())
 ```java
-FCMManager.getInstance(this).subscribeTopic("friendsTopic");
-FCMManager.getInstance(this).unSubscribeTopic("friendsTopic");
+FCMManager.getInstance(this).subscribeTopic("topic");
+FCMManager.getInstance(this).unSubscribeTopic("topic");
 
 ```
 
