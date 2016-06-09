@@ -26,7 +26,7 @@ dependencies {
     compile 'com.trung.fcm.library:EasyFCM:0.0.1'
 }
 ```
-Note that the version 1.0 use the version 9.0.2 of Firebase, if you include the library as a submodule` you can define it in `gradle.properties` file.
+Note that the version 1.0 use the version 9.0.2 of Firebase, if you include the library as a submodule you can define it in `gradle.properties` file.
 
 
 Add the FCM dependency to your app-level build.gradle file
