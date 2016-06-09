@@ -11,7 +11,7 @@ Easy FireBase Cloud Notification
 
 # Overview
 Google has replaced GCM by FCM.
-This library was based on [FastGCM](https://github.com/iammert/FastGCM)
+This library was based on [FastGCM](https://github.com/iammert/FastGCM) and hosted in `jCenter`
 # Features
 * Receive Firebase push messages
 * Subscribe and receive Firebase push messages by topic
@@ -23,10 +23,10 @@ Add the FCM dependency to your app-level build.gradle file
 apply plugin: 'com.google.gms.google-services'
 
 dependencies {
-    compile 'com.github.trungnguyen:EasyFCM:1.0'
+    compile 'com.trung.fcm.library:EasyFCM:0.0.1'
 }
 ```
-Note that the version 1.0 use the version 9.0.2 of Firebase, if you include the library as a `submodule` you can define it in `gradle.properties` file.
+Note that the version 1.0 use the version 9.0.2 of Firebase, if you include the library as a submodule` you can define it in `gradle.properties` file.
 
 
 Add the FCM dependency to your app-level build.gradle file

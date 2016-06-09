@@ -34,7 +34,6 @@ public abstract class FCMCompatActivity extends AppCompatActivity implements FCM
 
     /**
      * Internal life cycle listener.
-     * <p/>
      * Used nested class instead of directly implements callback in order to reduce the public
      * API
      */
