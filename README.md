@@ -19,14 +19,14 @@ This library was based on [FastGCM](https://github.com/iammert/FastGCM)
 # Prerequisites
 Add the FCM dependency to your app-level build.gradle file
 
-```
+```à
 apply plugin: 'com.google.gms.google-services'
 
 dependencies {
     compile 'com.github.trungnguyen:EasyFCM:1.0'
 }
 ```
-Note that the version 1.0 use the version 9.0.2 of Firebase, you can define it in `gradle.properties` file
+Note that the version 1.0 use the version 9.0.2 of Firebase, if you include the library as a `submodule` you can define it in `gradle.properties` file.
 
 
 Add the FCM dependency to your app-level build.gradle file
